@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+
+    <!-- Optionally, include either the iOS or Android theme -->
+    <link href="css/ratchet-theme-android.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/ratchet.js"></script>
+    
+    
+    <link rel="stylesheet" href="css/jquery.Jcrop.min.css"/>
+  </head>
+  
+  
+  
+  <body class ="step1">
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+      <a class="icon icon-left-nav pull-left" href="index.html" data-transition="slide-out"></a>
+      <!--<h1 class="title">Recognition</h1>-->
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+        <div class="jumbotron">
+        <div id="step1" >
+            
+        <figure class="not-ready">
+                <video autoplay ></video>
+        </figure>
+        
+        <button class="btn btn-primary btn-block" disabled id="takePicture">Take Picture</button>
+                        
+        </div>
+        <div id="step2">
+            <figure>
+                <canvas style="display:none"></canvas>
+                <img src=""/>
+            </figure>
+
+            <!--<p>Brightness: <input type="range" min="0" max="100" id="brightness" value="20"></p>
+
+            <p>Contrast: <input type="range" min="0" max="100" id="contrast" value="90"></p>-->
+            
+            <button class="btn btn-primary btn-block" id="adjust" disabled>Done</button>
+        </div>   
+        
+        <div id="step3">
+                  
+                <figure>
+                    <canvas></canvas>
+                </figure>
+                
+                <blockquote>
+                    <p id="result"></p>
+                    <footer></footer>
+                </blockquote>
+                
+             </div> 
+    </div>
+    </div>
+
+
+<script src="jquery-2.2.3.min.js"></script>
+<!--<script src="//code.jquery.com/mobile/git/jquery.mobile-git.min.js"></script>-->
+<script src="modernizr.min.js"></script>
+<script src="jquery.Jcrop.js"></script>
+<script src="ocrad.min.js"></script>
+<script src="glfx.min.js"></script>
+
+
+
+
+<script src="main.js"></script>
+
+
+  </body>
+</html>
